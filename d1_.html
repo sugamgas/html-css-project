@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .video-container {
+            top: 100px;
+            left: 300px;
+            position: relative;
+            /* width: fit-content; */
+            display: inline-block;
+        }
+
+        video {
+            width: 700px;
+            /* adjust width as needed */
+
+            height: auto;
+            /* keeps aspect ratio */
+        }
+
+        .video-logo {
+            position: absolute;
+            top: 280px;
+           
+                 left: 610px;
+            width: 55px;
+           
+            /* adjust size */
+            /* slightly transparent */
+            pointer-events: none;
+            /* prevents blocking video controls */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-container">
+        <video controls>
+            <source src="../docs/video.mp4" type="video/mp4">
+        </video>
+
+        <img src="../docs/image.png" class="video-logo">
+    </div>
+
+</body>
+
+</html>
